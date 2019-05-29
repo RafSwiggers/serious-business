@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2.5fr;
+    grid-template-areas: "header header right-bar" "body body right-bar";
+}
+
+.sidebar-right {
+    padding-left: 1vw;
+    grid-area: right-bar;
+    background-color: #A3EB98;
+}
+
+body {
+    background-color: cornsilk;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner {
+    grid-area: header;
+}
