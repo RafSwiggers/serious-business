@@ -19,5 +19,5 @@ body {
 
 .banner {
     grid-area: header;
-    background: url('/images/desk.jpeg')
+    background: url('/images/desk.jpg')
 }
