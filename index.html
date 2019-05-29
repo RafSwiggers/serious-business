@@ -27,6 +27,7 @@
             <div id="opening sign">
                 <p id="openclose"></p>
                 <hr>
+                <p>It is now</p>
                 <p id="clock"></p>
             </div>
 
@@ -37,7 +38,8 @@
 </body>
 
 <script>
-    document.getElementById("clock").innerHTML = "Date";
+    var now = new Date();
+    document.getElementById("clock").innerHTML = now.toLocaleString();
 </script>
 
 </html>
