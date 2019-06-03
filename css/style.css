@@ -19,5 +19,5 @@ body {
 
 .banner {
     grid-area: header;
-    background: url('/images/desk.jpg') no-repeat center center fixed;
+    background: url('/serious-business/images/desk.jpg') no-repeat center center fixed;
 }
