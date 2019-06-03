@@ -13,6 +13,20 @@ function sign() {
     }
 }
 
+var myVar = setInterval(setTime, 1000);
+
+function setTime() {
+    var now = new Date();
+    document.getElementById("hours").innerHTML = now.getHours();
+    if (now.getMinutes() < 10) {
+        document.getElementById("minutes").innerHTML = "0" + now.getMinutes();
+        console.log("working")
+    } else {
+        document.getElementById("minutes").innerHTML = now.getMinutes();
+    }
+
+}
+
 function closetime() {
     if (closingtime) {
         closeingtime = false;
