@@ -28,10 +28,12 @@ function setTime() {
 }
 
 function closetime() {
-    if (closingtime) {
-        closeingtime = false;
+    var day = new Date;
+    if (day.getMinutes() < 10) {
+        document.getElementById("closetime" + day.getDay()).innerHTML = day.getHours().toString() + ":0" + day.getMinutes().toString();
+        console.log("working")
     } else {
-        closingtime = true;
+        document.getElementById("closetime" + day.getDay()).innerHTML = day.getHours().toString() + ":" + day.getMinutes().toString();
     }
+
 }
-console.log(closingtime);
